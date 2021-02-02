@@ -43,7 +43,7 @@
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>flatten-maven-plugin</artifactId>
-					<version>1.0.1</version>
+					<version>1.2.2</version>
 					<configuration>
 						<updatePomFile>true</updatePomFile>
 						<pomElements>
@@ -76,7 +76,7 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-assembly-plugin</artifactId>
-					<version>3.1.0</version>
+					<version>3.3.0</version>
 					<configuration>
 						<descriptors>
 							<descriptor>src/main/assembly/archive.xml</descriptor>
@@ -97,7 +97,7 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-dependency-plugin</artifactId>
-					<version>3.0.2</version>
+					<version>3.1.2</version>
 					<configuration>
 						<!-- serves as input to copy goal - copies current JAR -->
 						<artifactItems>
@@ -115,7 +115,7 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-source-plugin</artifactId>
-					<version>2.2.1</version>
+					<version>3.2.0</version>
 					<executions>
 						<execution>
 							<id>generate-jar</id>
@@ -128,7 +128,7 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-javadoc-plugin</artifactId>
-					<version>3.0.1</version>
+					<version>3.2.0</version>
 					<executions>
 						<execution>
 							<id>generate-jar</id>
@@ -149,7 +149,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.7.0</version>
+				<version>3.8.1</version>
 				<configuration>
 					<!-- NB: ${java.specification.version} would specify the current JDK -->
 					<source>${java.version}</source>
@@ -167,7 +167,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
-				<version>3.0.2</version>
+				<version>3.2.0</version>
 				<configuration>
 					<archive>
 						<addMavenDescriptor>false</addMavenDescriptor>
@@ -198,7 +198,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<version>2.21.0</version>
+				<version>2.22.2</version>
 				<configuration>
 					<useFile>false</useFile> <!-- see output on console -->
 					<trimStackTrace>false</trimStackTrace>
@@ -207,7 +207,7 @@
 			<plugin>
 				<groupId>org.jacoco</groupId>
 				<artifactId>jacoco-maven-plugin</artifactId>
-				<version>0.8.1</version>
+				<version>0.8.6</version>
 				<executions>
 					<execution>
 						<goals>
