@@ -1,4 +1,6 @@
-Simply install this POM locally by running:
+This project provides the parent POM for building NAF, Mailismus and related projects.
+
+Install this POM locally by running:
 	mvn clean install
 
 Then refer to it as the parent POM in other projects as follows:
