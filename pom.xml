@@ -18,6 +18,7 @@
 		<grey.version.commonslog>1.2</grey.version.commonslog>
 		<grey.manifest.vendor>Grey Software</grey.manifest.vendor>
 		<grey.manifest.builder>Grey Build Manager</grey.manifest.builder>
+		<grey.nexus.url>http://localhost:8081</grey.nexus.url>
 		<grey.assemblyname>${project.artifactId}</grey.assemblyname>
 		<grey.buildid>${maven.build.timestamp}</grey.buildid>
 		<maven.build.timestamp.format>yyyyMMddHHmm</maven.build.timestamp.format>
@@ -289,17 +290,17 @@
 			<distributionManagement>
 				<repository>
 					<id>greyrepo</id>
-					<url>http://halibut.grey:8081/repository/maven-releases</url>
+					<url>${grey.nexus.url}/repository/maven-releases</url>
 				</repository>
 				<snapshotRepository>
 					<id>greyrepo</id>
-					<url>http://halibut.grey:8081/repository/maven-snapshots</url>
+					<url>${grey.nexus.url}/repository/maven-snapshots</url>
 				</snapshotRepository>
 			</distributionManagement>
 			<repositories>
 				<repository>
 					<id>greyrepo</id>
-					<url>http://halibut.grey:8081/repository/maven-public</url>
+					<url>${grey.nexus.url}/repository/maven-public</url>
 				</repository>
 			</repositories>
 		</profile>
@@ -307,7 +308,7 @@
 	<scm>
 		<connection>scm:git:git://github.com/greysoft/greybuild.git</connection>
 		<developerConnection>scm:git:ssh://github.com:greysoft/greybuild.git</developerConnection>
-		<url>https://github.com/greysoft/greybuild/tree/master</url>
+		<url>https://github.com/greysoft/greybuild</url>
 	</scm>
 	<licenses>
 		<license>
